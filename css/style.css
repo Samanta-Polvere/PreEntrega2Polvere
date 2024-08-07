@@ -248,6 +248,7 @@
 .main #noticias {
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
 
 
@@ -278,30 +279,10 @@
     border-radius: 25px;
 }
 
-.main #noticias .sticker1 {
-    position: absolute;
-    display: flex;
-    width: 30px;
-    margin-top: 210px;
-    margin-left: 70px;
-    rotate: z 30deg;
-}
-
-.main #noticias .sticker2 {
-    position: absolute;
-    display: flex;
-    width: 30px;
-    margin-top: 210px;
-    margin-left: 777px;
-    rotate: z 30deg;
-}
-
 .seccion-diario {
     width: 100%;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .main #noticias .info h3 {
@@ -314,16 +295,13 @@
 }
 
 .main #noticias .juegos {
-    width: 100%;
+    width: 70%;
     display: flex;
-    justify-content: center;
-
 }
 
 .main #noticias .juegos iframe {
     border-radius: 20px;
-    width: 300px;
-    margin: 20px;
+    margin: 5px;
 }
 
 .contacto {
@@ -385,20 +363,18 @@
     flex-wrap: wrap;
     justify-content: space-around;
     color: whitesmoke;
-    padding:15px;
+    padding: 15px;
     background-color: #02104b;
 }
 
 #redes {
     display: flex;
-
 }
 
 .sociales a img {
     width: 55px;
     float: left;
     margin-top: 35px;
-
 }
 
 .footer .copyright {
@@ -406,7 +382,6 @@
     font-family: 'noto';
     width: 300px;
     margin-top: 60px;
-
 }
 
 /*Fin del footer*/
@@ -429,7 +404,16 @@
     .historia {
         flex-wrap: nowrap;
     }
-  
+
+    .main #noticias, .main .juegos {
+        width: 90%;
+
+    }
+
+    .main .juegos iframe {
+        width: 300px;
+    }
+
 }
 
 @media screen and (max-width: 995px) {
@@ -490,6 +474,7 @@
         margin-bottom: 0px;
         letter-spacing: 0px;
     }
+
     .imagencontacto {
         width: 45%;
     }
@@ -498,7 +483,7 @@
         flex-direction: column;
         align-items: center;
     }
-   
+
 }
 
 
@@ -556,7 +541,7 @@
         padding: 0px;
     }
 
-    #contacto-container .contacto #formulario ,
+    #contacto-container .contacto #formulario,
     .imagencontacto {
         width: 75%;
     }
@@ -636,7 +621,6 @@
         align-items: center;
 
     }
-
     .footer .copyright {
         display: block;
         text-align: center;
@@ -644,7 +628,6 @@
         margin-left: 25px;
 
     }
-
     .sociales a img {
         align-self: center;
         margin-top: 10px;
