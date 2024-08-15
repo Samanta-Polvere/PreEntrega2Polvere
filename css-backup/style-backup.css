@@ -1,0 +1,636 @@
+/* Inicio fuentes importadas*/
+@font-face {
+    font-family: 'intensamente';
+    src: url('../fonts/caveatbrush/CaveatBrush-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'noto';
+    src: url('../fonts/notoaerifjp/NotoSerifJP-VariableFont_wght.ttf');
+}
+
+/* Fin de fuentes importadas*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.conteiner {
+    width: 100%;
+    display: flex;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 3fr auto;
+    grid-template-areas:
+        "header "
+        "main  "
+        "footer ";
+}
+
+/*Estilos al header*/
+.header {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+    grid-area: header;
+    background-color: #02104b;
+    border-bottom: 1px solid whitesmoke;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+
+/*Fin estilos al header*/
+
+/* Inicio de estilos al logo*/
+#logodisney {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#logodisney img {
+    width: 200px;
+}
+
+/* fin de estilos del logo*/
+
+
+/* Inicio estilos al nav*/
+.container-nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar {
+    background-color: #02104b;
+
+}
+
+.navbar-toggler {
+    background-color: whitesmoke;
+    border: 1px solid #2660e6;
+}
+
+.nav-item {
+    padding-right: 10px;
+    border-right: 1px solid #122562;
+}
+
+.nav-links {
+    color: #cef3f3;
+    text-decoration: none;
+    font-family: 'intensamente';
+    text-align: center;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.nav-links:hover {
+    color: #2660e6;
+    transition: 300ms;
+}
+
+
+/* Fin estilos al nav*/
+
+/*Estilos al banner*/
+#banner {
+    height: 360px;
+    padding-top: 25px;
+    margin-bottom: 110px;
+}
+
+#banner img {
+    width: 100%;
+    border-radius: 35px;
+    box-shadow: 2px 2px 20px 2px whitesmoke;
+    transition: transform 0.5s ease;
+}
+
+#banner img:hover {
+    transform: scale(0.95);
+}
+
+/* Fin de estilos al banner*/
+
+/* Inicio del main*/
+.main {
+    background-color: #122562;
+    padding: 30px;
+    grid-area: main;
+}
+
+.main h2 {
+
+    font-family: 'noto';
+    color: #2660e6;
+    font-size: 300%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.main h1 {
+    font-family: 'intensamente';
+    font-size: 900%;
+    color: whitesmoke;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 3px 10px rgb(140, 141, 233);
+}
+
+.main h3 {
+    color: whitesmoke;
+    font-family: 'noto';
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.main .intro,
+.historia {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main .intro img,
+.main .historia img,
+#personajes img {
+    border-radius: 30px;
+    margin-left: 25px;
+    margin-bottom: 20px;
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+}
+
+.main .intro img:hover,
+.main .historia img:hover {
+    transform: translateY(5px);
+    box-shadow: 0 4px 6px rgba(238, 253, 212, 0.3);
+}
+
+.main section .inicio {
+    width: 30%;
+    color: whitesmoke;
+    font-family: 'noto';
+    margin: 40px;
+    padding: 30px;
+}
+
+.main .intro p {
+    margin-bottom: 15px;
+}
+
+.main section .inicio img {
+    width: 100%;
+}
+
+.main .intro a,
+.main #personajes a,
+.main #noticias .info a {
+    text-decoration: none;
+    color: #2660e6;
+    font-family: 'noto';
+}
+
+.repaso,
+.comentarios {
+    width: 67%;
+    color: whitesmoke;
+    font-family: 'noto';
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.historia img {
+    margin-top: 40px;
+}
+
+.main section #personajes,
+.main #noticias .info {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.main section #personajes:first-child {
+    padding-top: 20px;
+}
+
+.main #personajes img {
+    width: 15%;
+    margin: 30px;
+    box-shadow: 2px 0px 10px 1px #FBE4B6;
+}
+
+.main #personajes audio {
+    width: 250px;
+    margin-top: 10px;
+}
+
+.main #personajesintensamente {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    background-color: rgba(255, 250, 250, 0.123);
+    border-radius: 78px 168px 200px 78px;
+    box-shadow: 4px 0px 11px 7px #FBE4B6;
+}
+
+.main #noticias {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+
+.main #noticias h1 {
+    font-size: 550%;
+}
+
+.main #noticias .articulos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main #noticias .articulos p {
+    width: 45%;
+    text-align: center;
+    font-size: 20px;
+    padding: 30px;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    background-color: #02104b;
+    box-shadow: 1px 0px 4px 2px inset #f5f4f4;
+    color: whitesmoke;
+    line-height: 20px;
+    border-radius: 25px;
+}
+
+.seccion-diario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main #noticias .info h3 {
+    font-size: 17px;
+}
+
+.main #noticias .info a {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.main #noticias .juegos {
+    width: 70%;
+    display: flex;
+}
+
+.main #noticias .juegos iframe {
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.contacto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#contacto-container .contactanos {
+    width: 100% auto;
+    text-align: center;
+    color: whitesmoke;
+    font-family: 'noto';
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: flex;
+}
+
+#contacto-container .contacto #formulario {
+    width: 40%;
+}
+
+#contacto-container #formulario label {
+    font-family: 'intensamente';
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: rgb(228, 238, 187);
+}
+
+#contacto-container #formulario button {
+    border: none;
+    box-shadow: 1px 0px 4px 2px #f5f4f4;
+    background-color: whitesmoke;
+    color: #122562;
+    letter-spacing: 3px;
+    font-family: 'intensamente';
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.imagencontacto {
+    width: 35%;
+}
+
+#contacto-container .imagencontacto img {
+    width: 100%;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+
+/* Fin del main*/
+
+/*Inicio de footer*/
+.footer {
+    height: auto;
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: whitesmoke;
+    padding: 15px;
+    background-color: #02104b;
+}
+
+#redes {
+    display: flex;
+}
+
+.sociales a img {
+    width: 55px;
+    float: left;
+    margin-top: 35px;
+}
+
+.footer .copyright {
+    display: flex;
+    font-family: 'noto';
+    width: 300px;
+    margin-top: 60px;
+}
+
+/*Fin del footer*/
+
+/*Media Querie*/
+
+@media screen and (max-width: 1225px) {
+    .main section .inicio {
+        width: 20%;
+        padding-left: 10px;
+        margin: 5px;
+    }
+
+    #banner {
+        height: 300px;
+        padding-top: 25px;
+        margin-bottom: 90px;
+    }
+
+    .historia {
+        flex-wrap: nowrap;
+    }
+
+    .main #noticias, .main .juegos {
+        width: 90%;
+
+    }
+
+    .main .juegos iframe {
+        width: 300px;
+    }
+
+}
+
+@media screen and (max-width: 995px) {
+    #banner {
+        height: 240px;
+    }
+
+    .main h1 {
+        font-size: 500%;
+    }
+
+    .main .intro {
+        display: block;
+        text-align: center;
+    }
+
+    .main section .inicio {
+        width: 100%;
+        padding-left: 0px;
+        margin: 0;
+    }
+
+    .historia {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .historia:last-child {
+        flex-direction: column-reverse;
+    }
+
+    .historia img {
+        width: 60%;
+    }
+
+    .repaso {
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .main section #personajes {
+        width: 100%;
+    }
+
+    .comentarios {
+        width: 50%;
+        padding: 5px;
+    }
+
+    .main #personajes img {
+        width: 30%;
+        margin: 30px;
+        box-shadow: 2px 0px 10px 1px #FBE4B6;
+    }
+
+    .seccion-diario .info h3 {
+        margin-bottom: 0px;
+        letter-spacing: 0px;
+    }
+
+    .imagencontacto {
+        width: 45%;
+    }
+
+    .main #noticias .juegos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+
+@media screen and (max-width: 796px) {
+    .container-fluid {
+        margin-left: 70px;
+    }
+
+    .main {
+        padding: 15px;
+    }
+
+    .main .intro img {
+        width: 70%;
+    }
+
+    #banner {
+        height: 200px;
+    }
+
+    .nav-item {
+        padding-right: 10px;
+        border-right: none;
+    }
+
+    .main section #personajes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comentarios,
+    .main #noticias .articulos p {
+        width: 95%;
+    }
+
+    .main #noticias h1 {
+        font-size: 300%;
+    }
+
+    .main #noticias h2 {
+        font-size: 200%;
+    }
+
+    .main #noticias .articulos,
+    .contacto {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seccion-diario {
+        display: block;
+    }
+
+    .footer {
+        padding: 0px;
+    }
+
+    #contacto-container .contacto #formulario,
+    .imagencontacto {
+        width: 75%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    #logodisney img {
+        width: 130px;
+    }
+
+    .navbar-toggler {
+        font-size: 15px;
+    }
+
+    #banner {
+        height: 130px;
+    }
+
+    .main h2 {
+        font-size: 240%;
+    }
+
+    .main #personajesintensamente {
+        padding-bottom: 10px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .main section #personajes:first-child {
+        padding: 0;
+    }
+
+    .main #personajes img {
+        width: 35%;
+        margin-top: 15px;
+    }
+
+    .comentarios {
+        margin: 0;
+        font-size: 15px;
+    }
+
+    #contacto-container .contactanos {
+        font-size: 15px;
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #logodisney img {
+        width: 150px;
+    }
+
+    #banner {
+        height: 100px;
+
+    }
+
+    .main h1 {
+        font-size: 300%;
+
+    }
+
+    .main h3 {
+        font-size: 100%;
+    }
+
+    .main .historia .repaso {
+        font-size: 15px;
+
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .footer .copyright {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-left: 25px;
+
+    }
+    .sociales a img {
+        align-self: center;
+        margin-top: 10px;
+    }
+
+}
