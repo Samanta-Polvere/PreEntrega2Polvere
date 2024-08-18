@@ -33,72 +33,6 @@ $color-font-claro: #cef3f3;
         "main  "
         "footer ";
 
-    .mainContacto {
-        background-color: #122562;
-        padding: 30px;
-        grid-area: main;
-
-        #contact-container {
-
-            .contacto {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-around;
-
-                h2 {
-
-                    font-family: 'noto';
-                    color: #2660e6;
-                    font-size: 300%;
-                    text-align: center;
-                    margin-top: 15px;
-                }
-
-                .contactanos {
-                    width: 100% auto;
-                    text-align: center;
-                    color: whitesmoke;
-                    font-family: 'noto';
-                    font-size: 20px;
-                    margin-top: 10px;
-                    margin-bottom: 30px;
-                    display: flex;
-                }
-
-                #formulario {
-                    width: 40%;
-
-                    .mb-3 {
-                        .form-label {
-                            font-family: 'intensamente';
-                            font-size: 20px;
-                            letter-spacing: 3px;
-                            color: rgb(228, 238, 187);
-                        }
-                    }
-                    button {
-                        border: none;
-                        box-shadow: 1px 0px 4px 2px #f5f4f4;
-                        background-color: whitesmoke;
-                        color: #122562;
-                        letter-spacing: 3px;
-                        font-family: 'intensamente';
-                        font-size: 20px;
-                        font-weight: bold;
-                    }
-                }
-                .imagencontacto {
-                    width: 35%;
-                    
-                    img {
-                        width: 100%;
-                        margin-top: 30px;
-                        border-radius: 30px;
-                    }
-                }
-            }
-        }
-    }
 }
 
 @import "header";
@@ -106,5 +40,5 @@ $color-font-claro: #cef3f3;
 @import "mainHistoria";
 @import "mainPersonajes";
 @import "mainNoticias";
-
+@import "mainContacto";
 @import "footer";
