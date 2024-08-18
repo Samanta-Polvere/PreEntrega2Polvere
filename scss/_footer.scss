@@ -1,0 +1,41 @@
+.conteiner {
+    .footer {
+        height: auto;
+        grid-area: footer;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color: whitesmoke;
+        padding: 15px;
+        background-color: #02104b;
+
+        #logodisney {
+            margin-left: 15px;
+            margin-top: 15px;
+
+            img {
+                width: 200px;
+            }
+        }
+        .copyright {
+            display: flex;
+            font-family: 'noto';
+            width: 300px;
+            margin-top: 60px;
+        }
+        #redes {
+            display: flex;
+            .sociales{
+                a{
+                    img {
+                        width: 55px;
+                        float: left;
+                        margin-top: 35px;
+                    }
+                }
+            }
+        }
+
+    }
+
+}
