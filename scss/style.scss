@@ -33,7 +33,9 @@ $color-font-claro: #cef3f3;
         "main  "
         "footer ";
 
-        @import "header";
-        @import "footer";
-   
 }
+
+@import "header";
+@import "footer";
+@import "mainIndex";
+@import "mainHistoria";

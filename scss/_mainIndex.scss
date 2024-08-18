@@ -1,0 +1,85 @@
+.conteiner {
+    .mainIndex {
+        background-color: #122562;
+        padding: 30px;
+        grid-area: main;
+
+        #banner {
+            height: 360px;
+            padding-top: 25px;
+            margin-bottom: 110px;
+
+            img {
+                width: 100%;
+                border-radius: 35px;
+                box-shadow: 2px 2px 20px 2px whitesmoke;
+                transition: transform 0.5s ease;
+
+                &:hover {
+                    transform: scale(0.95);
+                }
+            }
+
+        }
+
+        h2 {
+
+            font-family: 'noto';
+            color: #2660e6;
+            font-size: 300%;
+            text-align: center;
+            margin-top: 15px;
+        }
+
+        h1 {
+            font-family: 'intensamente';
+            font-size: 900%;
+            color: whitesmoke;
+            text-align: center;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-shadow: 1px 3px 10px rgb(140, 141, 233);
+        }
+
+        h3 {
+            color: whitesmoke;
+            font-family: 'noto';
+            font-size: 2rem;
+            text-align: center;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+
+        .intro {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .img-intro {
+                border-radius: 30px;
+                margin-left: 25px;
+                margin-bottom: 20px;
+                transition: transform 0.5s ease, box-shadow 0.3s ease;
+                &:hover{
+                    transform: translate(3px, 2px);
+                    box-shadow: 0 4px 6px rgba(238, 253, 212, 0.3 );
+                }
+            }
+            .inicio {
+                width: 30%;
+                color: whitesmoke;
+                font-family: 'noto';
+                margin: 40px;
+                padding: 30px;
+                p {
+                    margin-bottom: 15px;
+                }
+                a {
+                    text-decoration: none;
+                    color: #2660e6;
+                    font-family: 'noto';
+                }
+            }
+        }
+    }
+}
