@@ -11,6 +11,7 @@
 
 /* Fin de fuentes importadas*/
 
+
 /*Variables*/
 $bg: #02104b;
 $color-font-claro: #cef3f3;
@@ -19,7 +20,6 @@ $color-font-claro: #cef3f3;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 .conteiner {
@@ -33,17 +33,17 @@ $color-font-claro: #cef3f3;
         "main  "
         "footer ";
 
-    .header {
-        display: flex;
-        width: 100%;
+        @import "header";
+
+    .footer {
         height: auto;
-        padding-bottom: 10px;
-        grid-area: header;
-        background-color: $bg;
-        border-bottom: 1px solid whitesmoke;
-        position: sticky;
-        top: 0px;
-        z-index: 1;
+        grid-area: footer;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color: whitesmoke;
+        padding: 15px;
+        background-color: #02104b;
 
         #logodisney {
             margin-left: 15px;
@@ -53,94 +53,25 @@ $color-font-claro: #cef3f3;
                 width: 200px;
             }
         }
-
-        .container-nav {
-            width: 80%;
+        .copyright {
             display: flex;
-            justify-content: space-around;
-
-            .navbar {
-                background-color: #02104b;
-
-                .navbar-toggler {
-                    background-color: whitesmoke;
-                    border: 1px solid #2660e6;
-                }
-
-                .nav-item {
-                    padding-right: 10px;
-                    border-right: 1px solid #122562;
-
-                    .nav-links {
-                        color: #cef3f3;
-                        text-decoration: none;
-                        font-family: 'intensamente';
-                        text-align: center;
-                        font-size: 30px;
-                        margin-left: 10px;
-
-                        &:hover {
-                            color: #2660e6;
-                            transition: 300ms;
-                        }
+            font-family: 'noto';
+            width: 300px;
+            margin-top: 60px;
+        }
+        #redes {
+            display: flex;
+            .sociales{
+                a{
+                    img {
+                        width: 55px;
+                        float: left;
+                        margin-top: 35px;
                     }
                 }
             }
         }
+
     }
 
-    .main {
-        background-color: #122562;
-        padding: 30px;
-        grid-area: main;
-
-        #banner {
-            height: 360px;
-            padding-top: 25px;
-            margin-bottom: 110px;
-
-            img {
-                width: 100%;
-                border-radius: 35px;
-                box-shadow: 2px 2px 20px 2px whitesmoke;
-                transition: transform 0.5s ease;
-
-                &:hover {
-                    transform: scale(0.95);
-                }
-            }
-
-        }
-        h2 {
-
-            font-family: 'noto';
-            color: #2660e6;
-            font-size: 300%;
-            text-align: center;
-            margin-top: 15px;
-        }
-        h1 {
-            font-family: 'intensamente';
-            font-size: 900%;
-            color: whitesmoke;
-            text-align: center;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            text-shadow: 1px 3px 10px rgb(140, 141, 233);
-        }
-        h3 {
-            color: whitesmoke;
-            font-family: 'noto';
-            font-size: 2rem;
-            text-align: center;
-            letter-spacing: 1px;
-            margin-bottom: 25px;
-        }
-        
-        .historia {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-    }
 }

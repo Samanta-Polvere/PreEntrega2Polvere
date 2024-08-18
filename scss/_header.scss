@@ -1,0 +1,64 @@
+.conteiner{
+    .header {
+        display: flex;
+        width: 100%;
+        height: auto;
+        padding-bottom: 10px;
+        grid-area: header;
+        background-color: #02104b;
+        border-bottom: 1px solid whitesmoke;
+        position: sticky;
+        top: 0px;
+        z-index: 1;
+
+        #logodisney {
+            margin-left: 15px;
+            margin-top: 15px;
+
+            img {
+                width: 200px;
+            }
+        }
+
+        .container-nav {
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+
+            .navbar {
+                background-color: #02104b;
+
+                .container-fluid {
+                    .navbar-toggler {
+                        background-color: whitesmoke;
+                        border: 1px solid #2660e6;
+                    }
+
+                    #navbarNav {
+                        .navbar-nav {
+                            .nav-item {
+                                padding-right: 10px;
+                                border-right: 1px solid #122562;
+
+                                .nav-links {
+                                    color: #cef3f3;
+                                    text-decoration: none;
+                                    font-family: 'intensamente';
+                                    text-align: center;
+                                    font-size: 30px;
+                                    margin-left: 10px;
+
+                                    &:hover {
+                                        color: #2660e6;
+                                        transition: 300ms;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

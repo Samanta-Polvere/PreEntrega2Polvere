@@ -8,21 +8,6 @@
   src: url("../fonts/notoaerifjp/NotoSerifJP-VariableFont_wght.ttf");
 }
 /* Fin de fuentes importadas*/
-/*Variables*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.conteiner {
-  width: 100%;
-  display: flex;
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto 3fr auto;
-  grid-template-areas: "header " "main  " "footer ";
-}
 .conteiner .header {
   display: flex;
   width: 100%;
@@ -50,15 +35,15 @@
 .conteiner .header .container-nav .navbar {
   background-color: #02104b;
 }
-.conteiner .header .container-nav .navbar .navbar-toggler {
+.conteiner .header .container-nav .navbar .container-fluid .navbar-toggler {
   background-color: whitesmoke;
   border: 1px solid #2660e6;
 }
-.conteiner .header .container-nav .navbar .nav-item {
+.conteiner .header .container-nav .navbar .container-fluid #navbarNav .navbar-nav .nav-item {
   padding-right: 10px;
   border-right: 1px solid #122562;
 }
-.conteiner .header .container-nav .navbar .nav-item .nav-links {
+.conteiner .header .container-nav .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-links {
   color: #cef3f3;
   text-decoration: none;
   font-family: "intensamente";
@@ -66,57 +51,56 @@
   font-size: 30px;
   margin-left: 10px;
 }
-.conteiner .header .container-nav .navbar .nav-item .nav-links:hover {
+.conteiner .header .container-nav .navbar .container-fluid #navbarNav .navbar-nav .nav-item .nav-links:hover {
   color: #2660e6;
   transition: 300ms;
 }
-.conteiner .main {
-  background-color: #122562;
-  padding: 30px;
-  grid-area: main;
+
+/*Variables*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.conteiner .main #banner {
-  height: 360px;
-  padding-top: 25px;
-  margin-bottom: 110px;
-}
-.conteiner .main #banner img {
+
+.conteiner {
   width: 100%;
-  border-radius: 35px;
-  box-shadow: 2px 2px 20px 2px whitesmoke;
-  transition: transform 0.5s ease;
+  display: flex;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto 3fr auto;
+  grid-template-areas: "header " "main  " "footer ";
 }
-.conteiner .main #banner img:hover {
-  transform: scale(0.95);
-}
-.conteiner .main h2 {
-  font-family: "noto";
-  color: #2660e6;
-  font-size: 300%;
-  text-align: center;
-  margin-top: 15px;
-}
-.conteiner .main h1 {
-  font-family: "intensamente";
-  font-size: 900%;
-  color: whitesmoke;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-shadow: 1px 3px 10px rgb(140, 141, 233);
-}
-.conteiner .main h3 {
-  color: whitesmoke;
-  font-family: "noto";
-  font-size: 2rem;
-  text-align: center;
-  letter-spacing: 1px;
-  margin-bottom: 25px;
-}
-.conteiner .main .historia {
+.conteiner .footer {
+  height: auto;
+  grid-area: footer;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  color: whitesmoke;
+  padding: 15px;
+  background-color: #02104b;
+}
+.conteiner .footer #logodisney {
+  margin-left: 15px;
+  margin-top: 15px;
+}
+.conteiner .footer #logodisney img {
+  width: 200px;
+}
+.conteiner .footer .copyright {
+  display: flex;
+  font-family: "noto";
+  width: 300px;
+  margin-top: 60px;
+}
+.conteiner .footer #redes {
+  display: flex;
+}
+.conteiner .footer #redes .sociales a img {
+  width: 55px;
+  float: left;
+  margin-top: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */
