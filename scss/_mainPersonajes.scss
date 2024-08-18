@@ -1,0 +1,59 @@
+.conteiner {
+    .mainPersonajes {
+        background-color: #122562;
+        padding: 30px;
+        grid-area: main;
+
+        #personajesintensamente {
+            width: 95%;
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            background-color: rgba(255, 250, 250, 0.123);
+            border-radius: 78px 168px 200px 78px;
+            box-shadow: 4px 0px 11px 7px #FBE4B6;
+
+            #personajes {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+
+                &:first-child {
+                    padding-top: 20px;
+                }
+
+                img {
+                    width: 15%;
+                    margin: 30px;
+                    box-shadow: 2px 0px 10px 1px #FBE4B6;
+                    border-radius: 30px;
+                    margin-left: 25px;
+                    margin-bottom: 20px;
+                    transition: transform 0.5s ease, box-shadow 0.3s ease;
+                }
+
+                .comentarios {
+                    width: 67%;
+                    color: whitesmoke;
+                    font-family: 'noto';
+                    margin: 10px;
+                    padding: 10px;
+                    text-align: center;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: #2660e6;
+                    font-family: 'noto';
+                }
+
+                audio {
+                    width: 250px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+
+
+}
