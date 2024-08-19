@@ -1,27 +1,24 @@
+
+
 .conteiner {
     .mainContacto {
-        background-color: #122562;
+        background-color:$bg-main;
         padding: 30px;
         grid-area: main;
 
         #contacto-container {
 
             .contacto {
-                display: flex;
-                flex-wrap: wrap;
+                @extend .flex-wrap-center;
                 justify-content: space-around;
 
                 h2 {
-                    font-family: 'noto';
-                    color: #2660e6;
-                    font-size: 300%;
-                    text-align: center;
-                    margin-top: 15px;
+                    @extend .h2;
                 }
                 .contactanos {
                     width: 100% auto;
                     text-align: center;
-                    color: whitesmoke;
+                    color: $color-primario;
                     font-family: 'noto';
                     font-size: 20px;
                     margin-top: 10px;
@@ -42,16 +39,16 @@
 
                     button {
                         border: none;
-                        box-shadow: 1px 0px 4px 2px #f5f4f4;
-                        background-color: whitesmoke;
-                        color: #122562;
+                        box-shadow: 1px 0px 4px 2px $color-terciario;
+                        background-color: $color-primario;
+                        color: $bg-main;
                         letter-spacing: 3px;
                         font-family: 'intensamente';
                         font-size: 20px;
                         font-weight: bold;
                         &:hover{
-                            background-color: #122562;
-                            color: whitesmoke;
+                            background-color:$bg-main;
+                            color: $color-primario;
                         }
                     }
                 }

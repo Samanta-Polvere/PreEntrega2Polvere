@@ -8,7 +8,41 @@
   src: url("../fonts/notoaerifjp/NotoSerifJP-VariableFont_wght.ttf");
 }
 /* Fin de fuentes importadas*/
-/*Variables*/
+/* Variables de estilos*/
+/*Variables media queries*/
+/*Creacion de extend*/
+.h2, .conteiner .mainContacto #contacto-container .contacto h2, .conteiner .mainNoticias #noticias h2, .conteiner .mainHistoria h2, .conteiner .mainIndex h2 {
+  font-family: "noto";
+  color: #2660e6;
+  font-size: 300%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.h1, .conteiner .mainNoticias #noticias h1, .conteiner .mainIndex h1 {
+  font-family: "intensamente";
+  font-size: 700%;
+  color: whitesmoke;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 1px 3px 10px rgb(140, 141, 233);
+}
+
+.h3, .conteiner .mainNoticias #noticias .seccion-diario .info h3, .conteiner .mainIndex h3 {
+  color: whitesmoke;
+  font-family: "noto";
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 25px;
+}
+
+.flex-wrap-center, .conteiner .mainContacto #contacto-container .contacto, .conteiner .mainNoticias #noticias .seccion-diario .info, .conteiner .mainPersonajes #personajesintensamente #personajes, .conteiner .mainPersonajes #personajesintensamente, .conteiner .mainHistoria .historia, .conteiner .mainIndex .intro {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -91,33 +125,7 @@
 .conteiner .mainIndex #banner img:hover {
   transform: scale(0.95);
 }
-.conteiner .mainIndex h2 {
-  font-family: "noto";
-  color: #2660e6;
-  font-size: 300%;
-  text-align: center;
-  margin-top: 15px;
-}
-.conteiner .mainIndex h1 {
-  font-family: "intensamente";
-  font-size: 900%;
-  color: whitesmoke;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-shadow: 1px 3px 10px rgb(140, 141, 233);
-}
-.conteiner .mainIndex h3 {
-  color: whitesmoke;
-  font-family: "noto";
-  font-size: 2rem;
-  text-align: center;
-  letter-spacing: 1px;
-  margin-bottom: 25px;
-}
 .conteiner .mainIndex .intro {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .conteiner .mainIndex .intro .img-intro {
@@ -151,16 +159,7 @@
   padding: 30px;
   grid-area: main;
 }
-.conteiner .mainHistoria h2 {
-  font-family: "noto";
-  color: #2660e6;
-  font-size: 300%;
-  text-align: center;
-  margin-top: 15px;
-}
 .conteiner .mainHistoria .historia {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 .conteiner .mainHistoria .historia img {
@@ -190,16 +189,12 @@
 }
 .conteiner .mainPersonajes #personajesintensamente {
   width: 95%;
-  display: flex;
-  flex-wrap: wrap;
   margin: 0 auto;
   background-color: rgba(255, 250, 250, 0.123);
   border-radius: 78px 168px 200px 78px;
-  box-shadow: 4px 0px 11px 7px #FBE4B6;
+  box-shadow: 4px 0px 11px 7px #cef3f3;
 }
 .conteiner .mainPersonajes #personajesintensamente #personajes {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
 }
 .conteiner .mainPersonajes #personajesintensamente #personajes:first-child {
@@ -208,7 +203,7 @@
 .conteiner .mainPersonajes #personajesintensamente #personajes img {
   width: 15%;
   margin: 30px;
-  box-shadow: 2px 0px 10px 1px #FBE4B6;
+  box-shadow: 2px 0px 10px 1px #cef3f3;
   border-radius: 30px;
   margin-left: 25px;
   margin-bottom: 20px;
@@ -243,22 +238,6 @@
   justify-content: center;
   flex-direction: column;
 }
-.conteiner .mainNoticias #noticias h1 {
-  font-family: "intensamente";
-  font-size: 550%;
-  color: whitesmoke;
-  text-align: center;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-shadow: 1px 3px 10px rgb(140, 141, 233);
-}
-.conteiner .mainNoticias #noticias h2 {
-  font-family: "noto";
-  color: #2660e6;
-  font-size: 300%;
-  text-align: center;
-  margin-top: 15px;
-}
 .conteiner .mainNoticias #noticias .articulos {
   width: 100%;
   display: flex;
@@ -273,7 +252,7 @@
   margin-left: 25px;
   margin-bottom: 25px;
   background-color: #02104b;
-  box-shadow: 1px 0px 4px 2px inset #f5f4f4;
+  box-shadow: 1px 0px 4px 2px inset #cef3f3;
   color: whitesmoke;
   line-height: 20px;
   border-radius: 25px;
@@ -284,18 +263,7 @@
   flex-direction: column;
 }
 .conteiner .mainNoticias #noticias .seccion-diario .info {
-  display: flex;
-  flex-wrap: wrap;
   width: 100%;
-}
-.conteiner .mainNoticias #noticias .seccion-diario .info h3 {
-  font-size: 17px;
-  color: whitesmoke;
-  font-family: "noto";
-  font-size: 2rem;
-  text-align: center;
-  letter-spacing: 1px;
-  margin-bottom: 25px;
 }
 .conteiner .mainNoticias #noticias .seccion-diario .info a {
   margin-left: 20px;
@@ -319,16 +287,7 @@
   grid-area: main;
 }
 .conteiner .mainContacto #contacto-container .contacto {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
-}
-.conteiner .mainContacto #contacto-container .contacto h2 {
-  font-family: "noto";
-  color: #2660e6;
-  font-size: 300%;
-  text-align: center;
-  margin-top: 15px;
 }
 .conteiner .mainContacto #contacto-container .contacto .contactanos {
   width: 100% auto;
@@ -351,7 +310,7 @@
 }
 .conteiner .mainContacto #contacto-container .contacto #formulario button {
   border: none;
-  box-shadow: 1px 0px 4px 2px #f5f4f4;
+  box-shadow: 1px 0px 4px 2px #cef3f3;
   background-color: whitesmoke;
   color: #122562;
   letter-spacing: 3px;
@@ -380,6 +339,7 @@
   justify-content: space-around;
   color: whitesmoke;
   padding: 15px;
+  border-top: 1px solid whitesmoke;
   background-color: #02104b;
 }
 .conteiner .footer #logodisney {
@@ -402,6 +362,242 @@
   width: 55px;
   float: left;
   margin-top: 35px;
+}
+
+@media screen and (max-width: 1225px) {
+  .conteiner .mainIndex #banner {
+    height: 300px;
+    padding-top: 25px;
+    margin-bottom: 90px;
+  }
+  .conteiner .mainIndex .intro .inicio {
+    width: 20%;
+    padding-left: 10px;
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .conteiner .mainHistoria .historia {
+    flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 1225px) {
+  .conteiner .mainNoticias #noticias {
+    width: 90%;
+  }
+  .conteiner .mainNoticias #noticias .juegos {
+    width: 90%;
+  }
+  .conteiner .mainNoticias #noticias .juegos iframe {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 995px) {
+  .conteiner .mainIndex #banner {
+    height: 240px;
+  }
+  .conteiner .mainIndex h1 {
+    font-size: 500%;
+  }
+  .conteiner .mainIndex .intro {
+    display: block;
+    text-align: center;
+  }
+  .conteiner .mainIndex .intro .inicio {
+    width: 100%;
+    padding-left: 0px;
+    margin: 0;
+  }
+}
+@media screen and (max-width: 995px) {
+  .conteiner .mainHistoria .historia {
+    flex-direction: column;
+    text-align: center;
+  }
+  .conteiner .mainHistoria .historia:last-child {
+    flex-direction: column-reverse;
+  }
+  .conteiner .mainHistoria .historia img {
+    width: 60%;
+  }
+  .conteiner .mainHistoria .historia .repaso {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 995px) {
+  .conteiner .mainPersonajes #personajesintensamente #personajes .comentarios {
+    width: 50%;
+    padding: 5px;
+  }
+  .conteiner .mainPersonajes #personajesintensamente #personajes img {
+    width: 30%;
+    margin: 30px;
+    box-shadow: 2px 0px 10px 1px #FBE4B6;
+  }
+}
+@media screen and (max-width: 995px) {
+  .conteiner .mainNoticias #noticias .seccion-diario .info h3 {
+    margin-bottom: 0px;
+    letter-spacing: 0px;
+  }
+  .conteiner .mainNoticias #noticias .juegos {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 995px) {
+  .conteiner .mainContacto #contacto-container .contacto .imagencontacto {
+    width: 45%;
+  }
+}
+@media screen and (max-width: 796px) {
+  .conteiner .header .container-nav .navbar .container-fluid {
+    margin-left: 70px;
+  }
+  .conteiner .header .container-nav .navbar .container-fluid #navbarNav .navbar-nav .nav-item {
+    padding-right: 10px;
+    border-right: none;
+  }
+}
+@media screen and (max-width: 796px) {
+  .conteiner .mainIndex #banner {
+    height: 200px;
+  }
+  .conteiner .mainIndex .intro .img-intro {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 796px) {
+  .conteiner .mainPersonajes #personajesintensamente #personajes {
+    flex-direction: column;
+    align-items: center;
+  }
+  .conteiner .mainPersonajes #personajesintensamente #personajes .comentarios {
+    width: 95%;
+  }
+}
+@media screen and (max-width: 796px) {
+  .conteiner .mainNoticias #noticias h1 {
+    font-size: 300%;
+  }
+  .conteiner .mainNoticias #noticias h2 {
+    font-size: 200%;
+  }
+  .conteiner .mainNoticias #noticias .articulos {
+    flex-direction: column;
+    align-items: center;
+  }
+  .conteiner .mainNoticias #noticias .articulos p {
+    width: 95%;
+  }
+  .conteiner .mainNoticias #noticias .seccion-diario {
+    display: block;
+  }
+}
+@media screen and (max-width: 796px) {
+  .conteiner .mainContacto #contacto-container .contacto {
+    flex-direction: column;
+    align-items: center;
+  }
+  .conteiner .mainContacto #contacto-container .contacto #formulario {
+    width: 75%;
+  }
+  .conteiner .mainContacto #contacto-container .contacto .imagencontacto {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 796px) {
+  .conteiner .footer {
+    padding: 0px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .conteiner .header #logodisney img {
+    width: 130px;
+  }
+  .conteiner .header .container-nav .navbar .container-fluid .navbar-toggler {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .conteiner .mainIndex #banner {
+    height: 130px;
+  }
+  .conteiner .mainIndex h2 {
+    font-size: 240%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .conteiner .mainPersonajes #personajesintensamente {
+    padding-bottom: 10px;
+    width: 100%;
+    border-radius: 0;
+  }
+  .conteiner .mainPersonajes #personajesintensamente #personajes:first-child {
+    padding: 0;
+  }
+  .conteiner .mainPersonajes #personajesintensamente #personajes img {
+    width: 35%;
+    margin-top: 15px;
+  }
+  .conteiner .mainPersonajes #personajesintensamente #personajes .comentarios {
+    margin: 0;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .conteiner .mainContacto #contacto-container .contacto h2 {
+    font-size: 240%;
+  }
+  .conteiner .mainContacto #contacto-container .contacto .contactanos {
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .conteiner .mainHistoria h2 {
+    font-size: 240%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .conteiner .mainNoticias #noticias .seccion-diario .info h3 {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .conteiner .header #logodisney img {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .conteiner .mainIndex #banner {
+    height: 100px;
+  }
+  .conteiner .mainIndex h1 {
+    font-size: 300%;
+  }
+  .conteiner .mainIndex h3 {
+    font-size: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .conteiner .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .conteiner .footer .copyright {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 25px;
+  }
+  .conteiner .footer #redes .sociales a img {
+    align-self: center;
+    margin-top: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

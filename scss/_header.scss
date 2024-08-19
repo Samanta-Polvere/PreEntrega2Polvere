@@ -5,8 +5,8 @@
         height: auto;
         padding-bottom: 10px;
         grid-area: header;
-        background-color: #02104b;
-        border-bottom: 1px solid whitesmoke;
+        background-color:$bg-header-footer;
+        border-bottom: 1px solid $color-primario;
         position: sticky;
         top: 0px;
         z-index: 1;
@@ -26,22 +26,22 @@
             justify-content: space-around;
 
             .navbar {
-                background-color: #02104b;
+                background-color:$bg-header-footer;
 
                 .container-fluid {
                     .navbar-toggler {
-                        background-color: whitesmoke;
-                        border: 1px solid #2660e6;
+                        background-color: $color-primario;
+                        border: 1px solid $color-secundario;
                     }
 
                     #navbarNav {
                         .navbar-nav {
                             .nav-item {
                                 padding-right: 10px;
-                                border-right: 1px solid #122562;
+                                border-right: 1px solid $bg-main;
 
                                 .nav-links {
-                                    color: #cef3f3;
+                                    color: $color-terciario;
                                     text-decoration: none;
                                     font-family: 'intensamente';
                                     text-align: center;
@@ -49,7 +49,7 @@
                                     margin-left: 10px;
 
                                     &:hover {
-                                        color: #2660e6;
+                                        color: $color-secundario;
                                         transition: 300ms;
                                     }
                                 }

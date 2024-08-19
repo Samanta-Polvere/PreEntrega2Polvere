@@ -1,6 +1,6 @@
 .conteiner {
     .mainNoticias {
-        background-color: #122562;
+        background-color: $bg-main;
         padding: 30px;
         grid-area: main;
 
@@ -11,21 +11,11 @@
             flex-direction: column;
 
             h1 {
-                font-family: 'intensamente';
-                font-size: 550%;
-                color: whitesmoke;
-                text-align: center;
-                letter-spacing: 2px;
-                text-transform: uppercase;
-                text-shadow: 1px 3px 10px rgb(140, 141, 233);
+                @extend .h1;
             }
 
             h2 {
-                font-family: 'noto';
-                color: #2660e6;
-                font-size: 300%;
-                text-align: center;
-                margin-top: 15px;
+                @extend .h2;
             }
 
             .articulos {
@@ -41,9 +31,9 @@
                     margin-top: 30px;
                     margin-left: 25px;
                     margin-bottom: 25px;
-                    background-color: #02104b;
-                    box-shadow: 1px 0px 4px 2px inset #f5f4f4;
-                    color: whitesmoke;
+                    background-color: $bg-header-footer;
+                    box-shadow: 1px 0px 4px 2px inset $color-terciario;
+                    color: $color-primario;
                     line-height: 20px;
                     border-radius: 25px;
                 }
@@ -55,25 +45,18 @@
                 flex-direction: column;
 
                 .info {
-                    display: flex;
-                    flex-wrap: wrap;
+                    @extend .flex-wrap-center;
                     width: 100%;
 
                     h3 {
-                        font-size: 17px;
-                        color: whitesmoke;
-                        font-family: 'noto';
-                        font-size: 2rem;
-                        text-align: center;
-                        letter-spacing: 1px;
-                        margin-bottom: 25px;
+                        @extend .h3;
                     }
 
                     a {
                         margin-left: 20px;
                         margin-top: 5px;
                         text-decoration: none;
-                        color: #2660e6;
+                        color: $color-secundario;
                         font-family: 'noto';
                     }
                 }

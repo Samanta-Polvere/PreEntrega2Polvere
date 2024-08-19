@@ -1,21 +1,19 @@
 .conteiner {
     .mainPersonajes {
-        background-color: #122562;
+        background-color: $bg-main;
         padding: 30px;
         grid-area: main;
 
         #personajesintensamente {
             width: 95%;
-            display: flex;
-            flex-wrap: wrap;
+            @extend .flex-wrap-center;
             margin: 0 auto;
             background-color: rgba(255, 250, 250, 0.123);
             border-radius: 78px 168px 200px 78px;
-            box-shadow: 4px 0px 11px 7px #FBE4B6;
+            box-shadow: 4px 0px 11px 7px $color-terciario;
 
             #personajes {
-                display: flex;
-                flex-wrap: wrap;
+                @extend .flex-wrap-center;
                 width: 100%;
 
                 &:first-child {
@@ -25,7 +23,7 @@
                 img {
                     width: 15%;
                     margin: 30px;
-                    box-shadow: 2px 0px 10px 1px #FBE4B6;
+                    box-shadow: 2px 0px 10px 1px $color-terciario;
                     border-radius: 30px;
                     margin-left: 25px;
                     margin-bottom: 20px;
@@ -34,7 +32,7 @@
 
                 .comentarios {
                     width: 67%;
-                    color: whitesmoke;
+                    color:$color-primario;
                     font-family: 'noto';
                     margin: 10px;
                     padding: 10px;
@@ -43,7 +41,7 @@
 
                 a {
                     text-decoration: none;
-                    color: #2660e6;
+                    color: $color-secundario;
                     font-family: 'noto';
                 }
 

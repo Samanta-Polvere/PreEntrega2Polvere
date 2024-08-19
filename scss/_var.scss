@@ -1,0 +1,44 @@
+/* Variables de estilos*/
+$bg-main:  #122562;
+$bg-header-footer:#02104b; 
+$color-primario:  whitesmoke;
+$color-secundario:#2660e6;
+$color-terciario:  #cef3f3;
+
+/*Variables media queries*/
+$desktop: 1225px;
+$desktop-min: 995px;
+$tablet: 796px;
+$tablet-min: 640px;
+$mobile: 480px;
+
+/*Creacion de extend*/
+.h2 {
+    font-family: 'noto';
+    color: $color-secundario;
+    font-size: 300%;
+    text-align: center;
+    margin-top: 15px;
+}
+.h1 {
+    font-family: 'intensamente';
+    font-size: 700%;
+    color: $color-primario;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 1px 3px 10px rgb(140, 141, 233);
+}
+
+.h3 {
+    color: $color-primario;
+    font-family: 'noto';
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.flex-wrap-center{
+    display: flex;
+    flex-wrap: wrap;
+}

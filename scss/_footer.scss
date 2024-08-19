@@ -5,9 +5,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        color: whitesmoke;
+        color: $color-primario;
         padding: 15px;
-        background-color: #02104b;
+        border-top: 1px solid $color-primario;
+        background-color: $bg-header-footer;
 
         #logodisney {
             margin-left: 15px;

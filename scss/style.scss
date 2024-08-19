@@ -10,31 +10,8 @@
 }
 
 /* Fin de fuentes importadas*/
-
-
-/*Variables*/
-$bg: #02104b;
-$color-font-claro: #cef3f3;
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.conteiner {
-    width: 100%;
-    display: flex;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto 3fr auto;
-    grid-template-areas:
-        "header "
-        "main  "
-        "footer ";
-
-}
-
+@import "var";
+@import "resetBody";
 @import "header";
 @import "mainIndex";
 @import "mainHistoria";
@@ -42,3 +19,4 @@ $color-font-claro: #cef3f3;
 @import "mainNoticias";
 @import "mainContacto";
 @import "footer";
+@import "mediaQueries";
