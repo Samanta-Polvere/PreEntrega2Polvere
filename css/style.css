@@ -73,6 +73,15 @@
 .conteiner .header #logodisney {
   margin-left: 15px;
   margin-top: 15px;
+  animation: rotary 5s infinite linear;
+}
+@keyframes rotary {
+  from {
+    transform: rotatey(0deg);
+  }
+  to {
+    transform: rotatey(360deg);
+  }
 }
 .conteiner .header #logodisney img {
   width: 200px;
@@ -209,6 +218,10 @@
   margin-bottom: 20px;
   transition: transform 0.5s ease, box-shadow 0.3s ease;
 }
+.conteiner .mainPersonajes #personajesintensamente #personajes img:hover {
+  transform: translate(3px, 2px);
+  box-shadow: 0 4px 6px rgba(238, 253, 212, 0.3);
+}
 .conteiner .mainPersonajes #personajesintensamente #personajes .comentarios {
   width: 67%;
   color: whitesmoke;
@@ -329,6 +342,24 @@
   width: 100%;
   margin-top: 30px;
   border-radius: 30px;
+  animation: opacity 7s infinite;
+}
+@keyframes opacity {
+  0% {
+    opacity: 0.8;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  75% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0.8;
+  }
 }
 
 .conteiner .footer {

@@ -14,9 +14,19 @@
         #logodisney {
             margin-left: 15px;
             margin-top: 15px;
+            animation: rotary 5s infinite linear;
+            @keyframes rotary {
+                from {
+                    transform: rotatey(0deg);
+                }
+                to {
+                    transform: rotatey(360deg);
+                }
+            }
 
             img {
                 width: 200px;
+                
             }
         }
 
