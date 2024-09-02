@@ -1,0 +1,54 @@
+.conteiner {
+    .mainError404 {
+        background-color: $bg-header-footer;
+        padding: 30px;
+        grid-area: main;
+
+        #e404 {
+            h1 {
+                @extend .h1;
+            }
+
+            h2 {
+                @extend .h2;
+            }
+
+            .comentario404 {
+                width: 100%;
+                text-align: center;
+                font-size: 30px;
+                color: $color-primario;
+                flex-wrap: wrap;
+            }
+            .ansiedad-e404{
+                width: 60% auto;
+                
+                .img-e404{
+                    width: 35%;
+                  
+                }
+                h3 {
+                    
+                    float: right;
+                    height: 75px;
+                    width: 65%;
+                    @extend .h3;
+                    margin-top: 60px;
+                 
+                }
+                .link-e404{
+                    width: 300px;
+                    height: 35px;
+                    float: right;
+                    background-color:$color-primario ;
+                    border-radius: 10px;
+                    text-decoration: none;
+            }
+               
+            }
+            
+        
+        }
+
+    }
+}

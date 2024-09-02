@@ -11,7 +11,7 @@
 /* Variables de estilos*/
 /*Variables media queries*/
 /*Creacion de extend*/
-.h2, .conteiner .mainContacto #contacto-container .contacto h2, .conteiner .mainNoticias #noticias h2, .conteiner .mainHistoria h2, .conteiner .mainIndex h2 {
+.h2, .conteiner .mainError404 #e404 h2, .conteiner .mainContacto #contacto-container .contacto h2, .conteiner .mainNoticias #noticias h2, .conteiner .mainHistoria h2, .conteiner .mainIndex h2 {
   font-family: "noto";
   color: #2660e6;
   font-size: 300%;
@@ -19,7 +19,7 @@
   margin-top: 15px;
 }
 
-.h1, .conteiner .mainNoticias #noticias h1, .conteiner .mainIndex h1 {
+.h1, .conteiner .mainError404 #e404 h1, .conteiner .mainNoticias #noticias h1, .conteiner .mainIndex h1 {
   font-family: "intensamente";
   font-size: 700%;
   color: whitesmoke;
@@ -29,7 +29,7 @@
   text-shadow: 1px 3px 10px rgb(140, 141, 233);
 }
 
-.h3, .conteiner .mainNoticias #noticias .seccion-diario .info h3, .conteiner .mainIndex h3 {
+.h3, .conteiner .mainError404 #e404 .ansiedad-e404 h3, .conteiner .mainNoticias #noticias .seccion-diario .info h3, .conteiner .mainIndex h3 {
   color: whitesmoke;
   font-family: "noto";
   font-size: 2rem;
@@ -393,6 +393,39 @@
   width: 55px;
   float: left;
   margin-top: 35px;
+}
+
+.conteiner .mainError404 {
+  background-color: #02104b;
+  padding: 30px;
+  grid-area: main;
+}
+.conteiner .mainError404 #e404 .comentario404 {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: whitesmoke;
+  flex-wrap: wrap;
+}
+.conteiner .mainError404 #e404 .ansiedad-e404 {
+  width: 60% auto;
+}
+.conteiner .mainError404 #e404 .ansiedad-e404 .img-e404 {
+  width: 35%;
+}
+.conteiner .mainError404 #e404 .ansiedad-e404 h3 {
+  float: right;
+  height: 75px;
+  width: 65%;
+  margin-top: 60px;
+}
+.conteiner .mainError404 #e404 .ansiedad-e404 .link-e404 {
+  width: 300px;
+  height: 35px;
+  float: right;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1225px) {
