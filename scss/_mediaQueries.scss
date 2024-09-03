@@ -267,7 +267,33 @@
         }
     }
 }
+@media screen and (max-width: $tablet) {
+    .conteiner {
+        .mainError404 {
+            #e404 {
+                .ansiedad-e404 {
+                    width: 60% auto;
+                    display: flex;
+                    flex-direction: row;
+    
+                    .img-e404 {
+                        width:30%;
+                                         
+                }
+    
+                .mensaje404 {
+                    .link-e404 {
+                        margin-left: 20px;
+                        margin-top: 1rem;
+                       
+                    }
+                }
+            }
+        }
+    }
+}
 
+}
 @media screen and (max-width: $tablet-min) {
     .conteiner {
         .header {
@@ -378,7 +404,28 @@
         }
     }
 }
-
+@media screen and (max-width: $tablet-min) {
+    .conteiner {
+        .mainError404 {
+            #e404 {
+                .ansiedad-e404 {
+                    .img-e404 {
+                        width:40%;
+                        margin-left: 0px;
+                  
+                }
+                 }
+                 .mensaje404 {
+                    width: 70% ;
+                    h3 {
+                        margin-top: 10px;
+                        line-height: 1rem;
+                   }
+            }
+        }
+}
+}
+}
 @media screen and (max-width: $mobile) {
     .conteiner {
         .header {
@@ -433,5 +480,36 @@
             }
         }
     }
+}
+}
+@media screen and (max-width: $mobile) {
+    .conteiner {
+        .mainError404 {
+            #e404 {
+                .ansiedad-e404 {
+                    .img-e404 {
+                        width:40%;
+             
+                  
+                }
+                .mensaje404 {
+                    width: 60% ;
+                    h3 {
+                        font-size: 20px;
+                        margin-top: 20px;
+                        line-height: 2rem;
+                   }
+                   .link-e404 {
+                    width: 200px;
+                    margin-left: 10px;
+                    font-size: 1.5rem;
+
+                    
+                }
+            }
+                 }
+                 
+        }
+}
 }
 }
