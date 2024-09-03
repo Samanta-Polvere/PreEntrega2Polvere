@@ -409,24 +409,27 @@
   color: whitesmoke;
 }
 .conteiner .mainError404 #e404 .ansiedad-e404 {
-  width: 80% auto;
+  width: 60% auto;
   display: flex;
   flex-direction: row;
 }
 .conteiner .mainError404 #e404 .ansiedad-e404 .img-e404 {
-  width: 35%;
+  width: 20%;
+  margin-left: 7rem;
 }
 .conteiner .mainError404 #e404 .ansiedad-e404 .mensaje404 {
-  width: 85%;
+  width: 60%;
 }
 .conteiner .mainError404 #e404 .ansiedad-e404 .mensaje404 h3 {
-  margin-top: 125px;
+  margin-top: 80px;
+  line-height: 4rem;
 }
 .conteiner .mainError404 #e404 .ansiedad-e404 .mensaje404 .link-e404 {
   width: 250px;
   height: 35px;
   line-height: 2rem;
-  margin-left: 320px;
+  margin-left: 200px;
+  margin-top: 3rem;
   display: block;
   text-align: center;
   background-color: whitesmoke;
@@ -585,6 +588,20 @@
     padding: 0px;
   }
 }
+@media screen and (max-width: 796px) {
+  .conteiner .mainError404 #e404 .ansiedad-e404 {
+    width: 60% auto;
+    display: flex;
+    flex-direction: row;
+  }
+  .conteiner .mainError404 #e404 .ansiedad-e404 .img-e404 {
+    width: 30%;
+  }
+  .conteiner .mainError404 #e404 .ansiedad-e404 .mensaje404 .link-e404 {
+    margin-left: 20px;
+    margin-top: 1rem;
+  }
+}
 @media screen and (max-width: 640px) {
   .conteiner .header #logodisney img {
     width: 130px;
@@ -639,6 +656,19 @@
     font-size: 100%;
   }
 }
+@media screen and (max-width: 640px) {
+  .conteiner .mainError404 #e404 .ansiedad-e404 .img-e404 {
+    width: 40%;
+    margin-left: 0px;
+  }
+  .conteiner .mainError404 #e404 .mensaje404 {
+    width: 70%;
+  }
+  .conteiner .mainError404 #e404 .mensaje404 h3 {
+    margin-top: 10px;
+    line-height: 1rem;
+  }
+}
 @media screen and (max-width: 480px) {
   .conteiner .header #logodisney img {
     width: 150px;
@@ -669,6 +699,24 @@
   .conteiner .footer #redes .sociales a img {
     align-self: center;
     margin-top: 10px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .conteiner .mainError404 #e404 .ansiedad-e404 .img-e404 {
+    width: 40%;
+  }
+  .conteiner .mainError404 #e404 .ansiedad-e404 .mensaje404 {
+    width: 60%;
+  }
+  .conteiner .mainError404 #e404 .ansiedad-e404 .mensaje404 h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 2rem;
+  }
+  .conteiner .mainError404 #e404 .ansiedad-e404 .mensaje404 .link-e404 {
+    width: 200px;
+    margin-left: 10px;
+    font-size: 1.5rem;
   }
 }
 
