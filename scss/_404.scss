@@ -1,11 +1,10 @@
 .conteiner {
-    .mainError404 {
+    .mainerror404 {
         background: $bg-header-footer;
         opacity: 0.9;
         padding: 30px;
         grid-area: main;
-        z-index: -1;
-
+        
         #e404 {
             h1 {
                 @extend .h1;
