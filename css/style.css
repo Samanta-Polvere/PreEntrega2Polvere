@@ -437,6 +437,10 @@
   font-weight: "bold";
   font-family: "noto";
 }
+.conteiner .mainerror404 #e404 .ansiedad-e404 .mensaje404 .link-e404:hover {
+  background-color: #2660e6;
+  color: whitesmoke;
+}
 
 @media screen and (max-width: 1225px) {
   .conteiner .mainIndex #banner {
